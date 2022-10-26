@@ -1,1 +1,89 @@
-<h1>bonjour a tous </h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    match<span>my</span>dev
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Create a project</h1>
+        <form class="needs-validation">
+            <div class="mb-3">
+                <label for="inputProjectName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputProjectName" aria-describedby="nameHelp" required>
+                <div id="nameHelp" class="form-text">Text with maximum of 150 chars.</div>
+            </div>
+            <div class="mb-3">
+                <label for="inputDescription" class="form-label">Description</label>
+                <textarea class="form-control" id="inputDescription" rows="10" required></textarea>
+                <div id="descriptionHelp" class="form-text">Text with maximum of 1000 chars.</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6 col-12">
+                    <label for="startDate">Start date</label>
+                    <input id="startDate" class="form-control mb-3" type="date" min="2018-01-01" required />
+                    <label for=" endDate">End date</label>
+                    <input id="endDate" class="form-control mb-3" type="date" min="2018-01-01" required />
+                </div>
+                <div class="col">
+                    <div class="form-check form-switch">
+                        <p>Status:</p>
+                        <input class="form-check-input" type="checkbox mb-3" role="switch" id="switchProduction">
+                        <label class="form-check-label" for="switchProduction">Production</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 justify-content-center">
+                    <button type="submit" class="btn btn-lg btn-primary mb-3 float-right">Create</button>
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+
+
+</body>
+
+</html>
