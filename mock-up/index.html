@@ -44,32 +44,38 @@
             </div>
         </nav>
     </header>
-    <main class="container">
+    <main class="container-xl">
+        <div class="row justify-content-center align-items-center">
+            <div class="col col-lg-9 col-xs-10 col-sm-10">
         <h1>Create a project</h1>
-        <form class="needs-validation">
+        <form>
             <div class="mb-3">
-                <label for="inputProjectName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="inputProjectName" aria-describedby="nameHelp" required>
+                <label for="inputProjectName" class="form-label">Name<span class="red">*</span></label>
+                <input type="text" class="form-control" id="inputProjectName" aria-describedby="nameHelp">
                 <div id="nameHelp" class="form-text">Text with maximum of 150 chars.</div>
             </div>
             <div class="mb-3">
-                <label for="inputDescription" class="form-label">Description</label>
-                <textarea class="form-control" id="inputDescription" rows="10" required></textarea>
+                <label for="inputDescription" class="form-label">Description<span class="red">*</span></label>
+                <textarea class="form-control" id="inputDescription" rows="10" ></textarea>
                 <div id="descriptionHelp" class="form-text">Text with maximum of 1000 chars.</div>
             </div>
 
             <div class="row mb-3">
                 <div class="col-md-6 col-12">
-                    <label for="startDate">Start date</label>
-                    <input id="startDate" class="form-control mb-3" type="date" min="2018-01-01" required />
+                    <label for="startDate">Start date<span class="red">*</span></label>
+                    <input id="startDate" class="form-control my-2" type="date" min="2018-01-01" />
                     <label for=" endDate">End date</label>
-                    <input id="endDate" class="form-control mb-3" type="date" min="2018-01-01" required />
+                    <input id="endDate" class="form-control my-2" type="date" min="2018-01-01" />
                 </div>
                 <div class="col">
                     <div class="form-check form-switch">
-                        <p>Status:</p>
-                        <input class="form-check-input" type="checkbox mb-3" role="switch" id="switchProduction">
-                        <label class="form-check-label" for="switchProduction">Production</label>
+                        <div class="row">
+                            <p class="status">Status<span class="red">*</span>:</p>
+                            <div class="col mx-5">
+                                <input class="form-check-input" type="checkbox mb-2 " role="switch" id="switchProduction">
+                                <label class="form-check-label" for="switchProduction">Production</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,6 +86,8 @@
             </div>
 
         </form>
+    </div>
+    </div>
     </main>
 
 
