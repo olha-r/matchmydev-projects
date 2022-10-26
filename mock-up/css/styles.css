@@ -6,3 +6,11 @@ body{
 .red{
     color:#FF0000;
 }
+.btn-red{
+    background-color: #FF0000;
+    color: white;
+} 
+.btn-red:hover{
+    background-color:#CD5C5C;
+    color: white;
+}
