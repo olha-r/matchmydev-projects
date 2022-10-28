@@ -14,3 +14,18 @@ body{
     background-color:#CD5C5C;
     color: white;
 }
+
+@media (min-width: 760px) {
+#logo {
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+
+}
+
+}
+
+#myColor {
+    color: red;
+}
+
