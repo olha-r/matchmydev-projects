@@ -30,7 +30,7 @@ body {
     background-color: #000;
 }
 .bg-dark {
-    background-color: #000;
+    background-color: #000!important;
 }
 
 .btn-create:hover {
