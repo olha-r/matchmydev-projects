@@ -29,6 +29,9 @@ body {
 .navbar-custom{
     background-color: #000;
 }
+.bg-dark {
+    background-color: #000;
+}
 
 .btn-create:hover {
     background-color: #DCDCDC;
