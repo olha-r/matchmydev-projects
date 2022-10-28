@@ -48,7 +48,7 @@
     </header>
     <main class="container-xl">
         <div class="row justify-content-center align-items-center">
-            <div class="col col-lg-9 col-xs-10 col-sm-10">
+            <div class="col col-12 col-sm-9">
                 <h1>Create a project</h1>
                 <form>
                     <div class="mb-3">
@@ -69,13 +69,14 @@
                             <input id="startDate" class="form-control my-2 focus-grey" type="date" min="2018-01-01" />
                             <label for=" endDate">End date</label>
                             <input id="endDate" class="form-control my-2 focus-grey" type="date" min="2018-01-01" />
+                            <div id="descriptionHelp" class="form-text">If set, must be after start date.</div>
                         </div>
                         <div class="col">
                             <div class="form-check form-switch">
                                 <div class="row">
                                     <p class="form-label status">In production?</p>
                                     <div class="col mx-5">
-                                        <input class="form-check-input mb-2" type="checkbox" role="switch">
+                                        <input class="form-check-input mb-2 focus-grey" type="checkbox" role="switch">
                                     </div>
                                 </div>
                             </div>
@@ -84,7 +85,7 @@
 
                     <div class="row">
                         <div class="col d-flex justify-content-end content">
-                            <button type="submit" class="btn btn-lg mb-3 col-md-3 col-sm-12 btn-create">Create</button>
+                            <button type="submit" class="btn btn-lg mb-3 col-12 col-md-3 btn-create">Create</button>
                         </div>
                     </div>
                 </form>
