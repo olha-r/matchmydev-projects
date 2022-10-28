@@ -52,13 +52,13 @@
                 <h1>Create a project</h1>
                 <form>
                     <div class="mb-3">
-                        <label for="inputProjectName" class="form-label">Name<span class="red">*</span></label>
+                        <label for="inputProjectName" class="form-label">Name</label>
                         <input type="text" class="form-control focus-grey" id="inputProjectName"
                             aria-describedby="nameHelp">
                         <div id="nameHelp" class="form-text">Text with maximum of 150 chars.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="inputDescription" class="form-label">Description<span class="red">*</span></label>
+                        <label for="inputDescription" class="form-label">Description</label>
                         <textarea class="form-control focus-grey" id="inputDescription" rows="10"></textarea>
                         <div id="descriptionHelp" class="form-text">Text with maximum of 1000 chars.</div>
                     </div>
@@ -73,19 +73,20 @@
                         <div class="col">
                             <div class="form-check form-switch">
                                 <div class="row">
-                                    <p class="form-label status">In production</p>
+                                    <p class="form-label status">In production?</p>
                                     <div class="col mx-5">
                                         <input class="form-check-input mb-2" type="checkbox" role="switch">
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="row">
-                                <div class="col d-flex justify-content-end content">
-                                    <button type="submit"
-                                        class="btn btn-lg mb-3 col-md-3 col-sm-12 btn-create">Create</button>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-end content">
+                            <button type="submit" class="btn btn-lg mb-3 col-md-3 col-sm-12 btn-create">Create</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
