@@ -14,23 +14,24 @@ body {
 }
 
 #logo {
-        color: white;
-        font-family: 'Source Code Pro', monospace;
-        font-weight: 600;
-        font-size: 2rem;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 2rem;
 
-    }
+}
 
 
 #myColor {
     color: red;
 }
 
-.navbar-custom{
+.navbar-custom {
     background-color: #000;
 }
+
 .bg-dark {
-    background-color: #000!important;
+    background-color: #000 !important;
 }
 
 .btn-create:hover {
