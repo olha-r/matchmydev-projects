@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap%27');
+
+
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -7,22 +10,25 @@ body {
 .btn-create {
     background-color: #A9A9A9;
     color: #000;
-    letter-spacing: 0.2ch;
+    letter-spacing: 0.1rem;
 }
 
-@media (min-width: 760px) {
-    #logo {
+#logo {
         color: white;
-        font-family: 'Source Sans Pro';
+        font-family: 'Source Code Pro', monospace;
         font-weight: 600;
+        font-size: 2rem;
 
     }
-}
+
 
 #myColor {
     color: red;
 }
 
+.navbar-custom{
+    background-color: #000;
+}
 
 .btn-create:hover {
     background-color: #DCDCDC;
@@ -37,6 +43,10 @@ body {
 .form-label::after {
     content: " *";
     color: red;
+}
+
+.form-label {
+    font-weight: 600;
 }
 
 .form-switch .form-check-input:checked {

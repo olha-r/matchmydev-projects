@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matchmydev</title>
-    <link rel="icon" type="image/png" href="/mock-up/imgs/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -16,13 +16,10 @@
 </head>
 
 <body>
-    <header class="sticky-top pb-2">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <header class="sticky-top mb-3">
+        <nav class="navbar navbar-expand-md navbar-custom">
             <div class=" container-xl">
                 <a class="navbar-brand" href="#"><span id="logo">match<span id="myColor">my</span>dev</span></a>
-                <!-- <a class="navbar-brand fw-bold" style="font-size:x-large" href="#"> -->
-                match<span class="required">my</span>dev
-                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,9 +44,9 @@
         </nav>
     </header>
     <main class="container-xl">
+        <h1>Create a project</h1>
         <div class="row justify-content-center align-items-center">
             <div class="col col-12 col-sm-9">
-                <h1>Create a project</h1>
                 <form>
                     <div class="mb-3">
                         <label for="inputProjectName" class="form-label">Name</label>
@@ -67,7 +64,7 @@
                         <div class="col-md-6 col-12">
                             <label class="form-label" for="startDate">Start date</label>
                             <input id="startDate" class="form-control my-2 focus-grey" type="date" min="2018-01-01" />
-                            <label for=" endDate">End date</label>
+                            <label class="form-label" for=" endDate">End date</label>
                             <input id="endDate" class="form-control my-2 focus-grey" type="date" min="2018-01-01" />
                             <div id="descriptionHelp" class="form-text">If set, must be after start date.</div>
                         </div>
