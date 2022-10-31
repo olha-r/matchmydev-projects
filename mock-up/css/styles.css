@@ -13,7 +13,7 @@ body {
     letter-spacing: 0.1rem;
 }
 
-#logo {
+.logo {
     color: white;
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
@@ -21,8 +21,13 @@ body {
 
 }
 
+.navbar{
+    padding-right: 12px;
+    padding-left: 12px;
+}
 
-#myColor {
+
+#my-color {
     color: red;
 }
 
@@ -37,11 +42,15 @@ body {
 .btn-create:hover {
     background-color: #DCDCDC;
     color: #34282C;
-    border-color: #000
+    border-color: #000;
+    box-shadow: 0px 0px 5px 4px #DCDCDC;
 }
 
 .content .btn-create:active {
     background-color: #DCDCDC;
+}
+#startDate, #endDate{
+    cursor: pointer;
 }
 
 .form-label::after {
@@ -59,19 +68,18 @@ body {
 }
 
 .form-check-input {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e")
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    cursor: pointer;
+}
+.form-switch .form-check-input:hover{
+    border-color:  #000;
+    box-shadow: 0px 0px 5px 4px #DCDCDC;
 }
 
 .form-switch .form-check-input:focus {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23A9A9A9'/%3e%3c/svg%3e");
     border-color: #A9A9A9;
 }
-
-.form-switch .form-check-input {
-    background-color: #DCDCDC;
-    border-color: #DCDCDC;
-}
-
 
 .form-switch .form-check-input {
     background-color: #DCDCDC;
