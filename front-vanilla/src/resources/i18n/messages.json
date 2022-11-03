@@ -1,0 +1,15 @@
+{
+    "form":{
+        "h1":"Create a project",
+        "name":"Name",
+        "nameHelp":"Text with maximum of 150 chars.",
+        "description":"Description",
+        "descriptionHelp":"Text with maximum of 1000 chars.",
+        "startDate": "Start date",
+        "endDate": "End date",
+        "endDateHelp": "If set, must be after start date.",
+        "production": "In production?",
+        "create": "Create"
+
+    }
+}
