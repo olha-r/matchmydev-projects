@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap%27');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.required::after {
+    content: " *";
+    color: var(--primary-color2);
+}
+
+.focus-grey:focus {
+    border-color: var(--secondary-color3);
+    box-shadow: 0px 0px 5px 4px var(--secondary-color3);
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: var(--primary-color1);
+    border-color: var(--primary-color1);
+}
+
+.form-check-input {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    cursor: pointer;
+}
+
+.form-switch .form-check-input:hover {
+    border-color: var(--primary-color1);
+    box-shadow: 0px 0px 5px 4px var(--secondary-color3);
+}
+
+.form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23A9A9A9'/%3e%3c/svg%3e");
+    border-color: var(--primary-color3);
+}
+
+.form-switch .form-check-input {
+    background-color: var(--secondary-color3);
+    border-color: var(--secondary-color3);
+}
+
+.form-switch {
+    padding: 0;
+    margin-top: 10px;
+}
+
+.form-check {
+    padding: 0;
+}
+
+input[type="date"] {
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: transparent;
+    background: transparent;
+}
+
+.btn-create {
+    background-color: var(--primary-color3);
+    color: var(--primary-color1);
+    letter-spacing: 0.1rem;
+}
+
+.btn-create:hover {
+    background-color: var(--secondary-color3);
+    color: var(--secondary-color1);
+    border-color: var(--primary-color1);
+    box-shadow: 0px 0px 5px 4px var(--secondary-color3);
+}
+
+.content .btn-create:active {
+    background-color: var(--secondary-color3);
+}
