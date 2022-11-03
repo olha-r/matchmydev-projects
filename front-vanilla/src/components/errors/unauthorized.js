@@ -1,11 +1,10 @@
 
-
-function renderNotFound() {
+function renderUnauthorized() {
     const content = `
-    <h1>404</h1>
+    <h1>401</h1>
     `
     const main = document.getElementById("main");
     main.innerHTML = content;
 }
 
-export { renderNotFound };
+export { renderUnauthorized };
