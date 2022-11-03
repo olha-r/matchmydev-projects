@@ -56,9 +56,6 @@ body {
 .content .btn-create:active {
     background-color: var(--secondary-color3);
 }
-#startDate, #endDate{
-    cursor: pointer;
-}
 
 .form-label::after {
     content: " *";
@@ -106,3 +103,19 @@ body {
 .form-check {
     padding: 0;
 }
+
+input[type="date"] {
+    position: relative;
+  }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: transparent;
+    background: transparent;
+  }
