@@ -1,0 +1,23 @@
+.logo {
+    color: var(--secondary-color4);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.navbar {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+#my-color {
+    color: var(--primary-color2);
+}
+
+.navbar-custom {
+    background-color: var(--primary-color1);
+}
+
+.bg-dark {
+    background-color: var(--primary-color1) !important;
+}
