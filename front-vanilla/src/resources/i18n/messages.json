@@ -10,6 +10,5 @@
         "endDateHelp": "If set, must be after start date.",
         "production": "In production?",
         "create": "Create"
-
     }
 }
