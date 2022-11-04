@@ -5,4 +5,3 @@ import { initMessages } from "./messages.js";
 await initMessages();
 renderMenu();
 renderForm();
-
