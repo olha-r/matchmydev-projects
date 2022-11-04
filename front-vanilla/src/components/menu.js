@@ -1,3 +1,5 @@
+import { messages } from "../messages.js";
+
 function renderMenu() {
     const content = `
             <nav class="navbar navbar-expand-md navbar-dark bg-dark container-xl">
@@ -9,7 +11,7 @@ function renderMenu() {
                 <div class="collapse navbar-collapse static-top" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"></a>
+                            <a class="nav-link" href="/#/create-project">${messages.form.h1}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"></a>
