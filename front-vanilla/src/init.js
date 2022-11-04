@@ -5,4 +5,3 @@ import { route } from "./router.js"
 await initMessages();
 renderMenu();
 route();
-

@@ -11,7 +11,7 @@ function renderMenu() {
                 <div class="collapse navbar-collapse static-top" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/#/create-project">${messages.form.h1}</a>
+                            <a class="nav-link" href="/#/create-project">${messages.createProject.h1}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"></a>
