@@ -1,7 +1,8 @@
 
 function renderUnauthorized() {
     const content = `
-    <h1>401</h1>
+    <h1>401 Unauthorized</h1>
+    <img src="./src/resources/images/errors/error-401.jpg" class="img-fluid" alt="401 Unauthorized">
     `
     const main = document.getElementById("main");
     main.innerHTML = content;
