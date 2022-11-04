@@ -2,9 +2,13 @@
     "createProject": {
         "h1": "Create a project",
         "form": {
-            "name":{ 
+            "name": {
                 "label": "Name",
-                "helpText": "Text with maximum of 150 chars."
+                "helpText": "Text with a maximum of 150 chars. Must be unique."
+            },
+            "code": {
+                "label": "Code",
+                "helpText": "Text with a maximum of 20 chars. Must be unique."
             },
             "description": {
                 "label": "Description",
@@ -15,12 +19,12 @@
             },
             "endDate": {
                 "label": "End date",
-                "helpText": "If set, must be after start date."
+                "helpText": "If set, must be after start date and less than or equal today."
             },
             "production": {
                 "label": "In production?"
             },
-            "submit": "Create"             
+            "submit": "Create"
         }
     },
     "errors": {
