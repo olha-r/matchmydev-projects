@@ -2,29 +2,31 @@
     "createProject": {
         "h1": "Create a project",
         "form": {
-            "name": "Name",
-            "nameHelp": "Text with maximum of 150 chars.",
-            "description": "Description",
-            "descriptionHelp": "Text with maximum of 1000 chars.",
-            "startDate": "Start date",
-            "endDate": "End date",
-            "endDateHelp": "If set, must be after start date.",
-            "production": "In production?",
-            "create": "Create"
+            "name":{ 
+                "label": "Name",
+                "helpText": "Text with maximum of 150 chars."
+            },
+            "description": {
+                "label": "Description",
+                "helpText": "Text with maximum of 1000 chars."
+            },
+            "startDate": {
+                "label": "Start date"
+            },
+            "endDate": {
+                "label": "End date",
+                "helpText": "If set, must be after start date."
+            },
+            "production": {
+                "label": "In production?"
+            },
+            "submit": "Create"             
         }
     },
     "errors": {
-        "unauthorized": {
-            "h1": "401 Unauthorized"
-        },
-        "forbidden": {
-            "h1": "403 Forbidden"
-        },
-        "notFound": {
-            "h1": "404 Not Found"
-        },
-        "internalServer": {
-            "h1": "500 Internal Server Error"
-        }
+        "unauthorized": "401 Unauthorized",
+        "forbidden": "403 Forbidden",
+        "notFound": "404 Not Found",
+        "internalServer": "500 Internal Server Error"
     }
 }
