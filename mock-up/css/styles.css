@@ -78,6 +78,6 @@ input[type="date"] {
     background-color: transparent;
     color: var(--primary-color3);
 }
-.border-right{
+#project-search{
     border-right: 0px;
 }

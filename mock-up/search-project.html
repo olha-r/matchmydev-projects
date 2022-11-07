@@ -45,15 +45,15 @@
     <main class="container-xl my-5 pt-5">
         <h1 class="pt-3">Search Project</h1>
         <form class="mb-3 mt-4">
-          <label for="search" class="form-label">Search project</label>
-          <div class="input-group">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control border-right focus-grey" placeholder="Project name" aria-label="project name" aria-describedby="basic-addon2">
+          <div class="input-group mb-3">
+            <label for="projestSearch" class="form-label">Search project</label>
+            <div class="input-group">
+                <input name="project-search"id="project-search" type="text" class="form-control focus-grey" aria-label="project name" aria-describedby="basic-addon2">
                 <span class="input-group-text"><i class="bi bi-search"></i></span>
                 <button type="submit" class="btn btn-create">Search</button>
               </div>
+              <div id="projectHelp" class="form-text">Text with a maximum of 150 chars. Must be unique.</div>
           </div>
-          <div id="projectHelp" class="form-text">Text with a maximum of 150 chars. Must be unique.</div>
         </form>
     </main>
     
