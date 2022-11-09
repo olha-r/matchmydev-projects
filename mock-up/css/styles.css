@@ -81,3 +81,19 @@ input[type="date"] {
 #project-search{
     border-right: 0px;
 }
+.text-size {
+    font-size: large;
+}
+.start-date {
+    font-weight: bold;
+}
+.footer-color {
+    background-color: var(--secondary-color3);
+}
+/* .bi-toggle-off {
+    color: aqua;
+} */
+.switched-rotate {
+    transform: rotate(180deg);
+    color: var(--secondary-color2)
+}
