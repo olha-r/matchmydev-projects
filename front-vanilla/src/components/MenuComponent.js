@@ -19,7 +19,7 @@ export default class MenuComponent extends BaseComponent {
                    <a class="nav-link" href="/#/create-project">${this.msg.createProject.h1}</a>
                </li>
                <li class="nav-item">
-                   <a class="nav-link" href="#"></a>
+                   <a class="nav-link" href="/#/search-project">${this.msg.searchProject.h1}</a>
                </li>
                <li class="nav-item">
                    <a class="nav-link" href="#"></a>

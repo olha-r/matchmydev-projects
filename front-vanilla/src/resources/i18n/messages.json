@@ -27,6 +27,21 @@
             "submit": "Create"
         }
     },
+
+    "searchProject": {
+        "h1": "Search for a project",
+        "searchBar": {
+            "label": "Search project",
+            "button": "Search",
+            "helpText": "Please enter part of or full project name"
+        },
+        "h2": "Projects found",
+        "card": {
+            "startDate": "Start date:",
+            "inProdution": "In production:"
+        }
+    },
+
     "errors": {
         "unauthorized": "401 Unauthorized",
         "forbidden": "403 Forbidden",

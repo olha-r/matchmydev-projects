@@ -73,3 +73,25 @@ input[type="date"] {
 .content .btn-create:active {
     background-color: var(--secondary-color3);
 }
+
+/* search css */
+.input-group-text{
+    background-color: transparent;
+    color: var(--primary-color3);
+}
+#project-search{
+    border-right: 0px;
+}
+.text-size {
+    font-size: large;
+}
+.start-date {
+    font-weight: bold;
+}
+.footer-color {
+    background-color: var(--secondary-color3);
+}
+.switched-rotate {
+    transform: rotate(180deg);
+    color: var(--secondary-color2)
+}
