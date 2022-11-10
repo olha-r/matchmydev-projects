@@ -1,4 +1,8 @@
+import Messages from "../Messages.js";
+
 export default class BaseComponent {
+
+    msg = Messages.messages;
 
     selector = null;
 
