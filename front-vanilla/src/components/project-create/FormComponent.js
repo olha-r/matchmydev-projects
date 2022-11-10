@@ -1,8 +1,15 @@
 import Messages from "../../Messages.js"
+import BaseComponent from "../BaseComponent.js";
 
-function renderForm() {
-    const formContent = `
-    <h1>${Messages.messages.createProject.h1}</h1>
+export default class FormComponent extends BaseComponent {
+
+    constructor() {
+        super("#main");
+    }
+
+    template() {
+        return `
+        <h1>${Messages.messages.createProject.h1}</h1>
         <div class="row justify-content-center align-items-center">
             <form>
                 <div class="row">
@@ -53,10 +60,6 @@ function renderForm() {
                 </div>
             </form>
         </div>
-    `;
-
-    const main = document.getElementById("main");
-    main.innerHTML = formContent;
+        `;
+    }
 }
-
-export { renderForm };

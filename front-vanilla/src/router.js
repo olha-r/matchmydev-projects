@@ -1,4 +1,4 @@
-import { renderForm } from "./components/project-create/form.js";
+import FormComponent from "./components/project-create/FormComponent.js";
 import { renderNotFound } from "./components/errors/notFound.js";
 import { renderForbidden } from "./components/errors/forbidden.js";
 import { renderInternalServer } from "./components/errors/internalServer.js";
@@ -8,16 +8,20 @@ window.addEventListener("hashchange", (event) => route(event));
 
 function route() {
     const hash = window.location.hash;
-    if(hash == "#/create-project" || hash == ""){
-        renderForm();
-    }else if(hash == "#/forbidden"){
+    let component = null;
+
+    if (hash == "#/create-project" || hash == "") {
+        component = new FormComponent();
+    } else if (hash == "#/forbidden") {
         renderForbidden();
-    }else if(hash == "#/internal-server"){
+    } else if (hash == "#/internal-server") {
         renderInternalServer();
-    }else if(hash == "#/unauthorized"){
+    } else if (hash == "#/unauthorized") {
         renderUnauthorized();
-    }else{
+    } else {
         renderNotFound();
     };
+    component.render();
+
 };
-export {route};
+export { route };
