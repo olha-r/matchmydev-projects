@@ -1,4 +1,4 @@
-import { messages } from "../messages.js";
+import Messages  from "../Messages.js";
 
 function renderMenu() {
     const content = `
@@ -11,7 +11,7 @@ function renderMenu() {
                 <div class="collapse navbar-collapse static-top" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/#/create-project">${messages.createProject.h1}</a>
+                            <a class="nav-link" href="/#/create-project">${Messages.messages.createProject.h1}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"></a>
