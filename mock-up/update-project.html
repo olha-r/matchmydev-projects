@@ -44,33 +44,35 @@
         </nav>
     </header>
     <main class="container-xl mt-5 pt-5">
-        <h1>Create a project</h1>
+        <h1>Update a project</h1>
         <div class="row justify-content-center align-items-center">
             <form>
+
                 <div class="row">
                     <div class="col-md-8 mb-3">
                         <label for="name" class="form-label required">Name</label>
                         <input name="name" id="name" type="text" class="form-control focus-grey"
-                            aria-describedby="nameHelp">
+                            aria-describedby="nameHelp" value="Lorem ipsum dolor">
                         <div id="nameHelp" class="form-text">Text with a maximum of 150 chars. Must be unique.</div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="code" class="form-label required">Code</label>
                         <input name="code" id="code" type="text" class="form-control focus-grey"
-                            aria-describedby="codeHelp">
+                            aria-describedby="codeHelp" value="Lorem">
                         <div id="codeHelp" class="form-text">Text with a maximum of 20 chars. Must be unique.</div>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label required">Description</label>
-                    <textarea name="description" id="description" class="form-control focus-grey" rows="10"></textarea>
+                    <textarea name="description" id="description" class="form-control focus-grey"
+                        rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non quidem officia modi libero praesentium culpa corporis eveniet. Molestias modi velit optio ab dolore! Sunt eos cumque facilis atque minima.</textarea>
                     <div id="descriptionHelp" class="form-text">Text with maximum of 1000 chars.</div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="startDate" class="form-label required">Start date</label>
                         <input name="startDate" type="date" id="startDate" class="form-control my-2 focus-grey"
-                            min="2018-01-01" />
+                            min="2018-01-01" value="1990-08-26" />
                     </div>
                     <div class="col-md-6">
                         <label for="endDate" class="form-label">End date</label>
@@ -91,7 +93,7 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col d-flex justify-content-end content">
-                        <button type="submit" class="btn col-12 col-md-2 btn-create">Create</button>
+                        <button type="submit" class="btn col-12 col-md-2 btn-create">Update</button>
                     </div>
                 </div>
             </form>
