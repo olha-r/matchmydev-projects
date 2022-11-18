@@ -6,13 +6,15 @@ export default class BaseComponent {
 
     selector = null;
 
+    target = null;
+
     constructor(selector) {
         this.selector = selector;
     }
 
     render() {
-        const target = document.querySelector(this.selector);
-        target.innerHTML = this.template();
+        this.target = document.querySelector(this.selector);
+        this.target.innerHTML = this.template();
     }
 
     template() {
