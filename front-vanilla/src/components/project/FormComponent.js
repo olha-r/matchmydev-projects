@@ -1,19 +1,19 @@
-import BaseComponent from "../BaseComponent.js";
+import BaseFormComponent from "../BaseFormComponent.js";
 
-export default class FormComponent extends BaseComponent {
+export default class FormComponent extends BaseFormComponent {
 
     constructor() {
         super("#main", {
-            url: "http://localhost:8080/projrcts", // change it if necessary when backend is established
+            url: "http://localhost:8080/projects", // change it if necessary when backend is established
             method: "POST"
         });
     }
 
-    datamodel(){
+    dataModel(){
         return{
             name: "test",
             code: "123",
-            description: "TESTE",
+            description: "TEST",
             startDate: "",
             endDate: "",
             production: false

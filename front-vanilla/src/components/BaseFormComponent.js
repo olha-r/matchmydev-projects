@@ -1,4 +1,4 @@
-import BaseComponent from "./BaseComponent";
+import BaseComponent from "./BaseComponent.js";
 
 export default class BaseFormComponent extends BaseComponent{
 

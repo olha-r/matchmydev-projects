@@ -1,6 +1,8 @@
-export default class Messages {
+export default class I18N {
 
    static messages = null;
+
+   // static dtf = null;
 
    static async init() {
 

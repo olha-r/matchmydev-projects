@@ -1,10 +1,10 @@
-import Messages from "./I18N.js";
+import I18N from "./I18N.js";
 import Router from "./Router.js"
 
 
 class Application {
     static async main() {
-        await Messages.init();
+        await I18N.init();
         Router.init();
     }
 }
