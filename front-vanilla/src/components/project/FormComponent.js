@@ -3,7 +3,21 @@ import BaseComponent from "../BaseComponent.js";
 export default class FormComponent extends BaseComponent {
 
     constructor() {
-        super("#main");
+        super("#main", {
+            url: "http://localhost:8080/projrcts", // change it if necessary when backend is established
+            method: "POST"
+        });
+    }
+
+    datamodel(){
+        return{
+            name: "test",
+            code: "123",
+            description: "TESTE",
+            startDate: "",
+            endDate: "",
+            production: false
+        }
     }
 
     template() {
