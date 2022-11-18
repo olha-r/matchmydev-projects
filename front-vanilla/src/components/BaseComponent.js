@@ -1,4 +1,4 @@
-import Messages from "../Messages.js";
+import Messages from "../I18N.js";
 
 export default class BaseComponent {
 
