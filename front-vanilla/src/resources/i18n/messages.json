@@ -27,7 +27,6 @@
             "submit": "Create"
         }
     },
-
     "searchProject": {
         "h1": "Search for a project",
         "searchBar": {
@@ -41,7 +40,13 @@
             "inProdution": "In production:"
         }
     },
-
+    "updateProject": {
+        "h1": "Update project",
+        "submit": {
+            "startDate": "Start date:",
+            "inProdution": "In production:"
+        }
+    },
     "errors": {
         "unauthorized": "401 Unauthorized",
         "forbidden": "403 Forbidden",
