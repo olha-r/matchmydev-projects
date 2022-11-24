@@ -3,11 +3,11 @@ import BaseIterableComponent from '../BaseIterableComponent.js';
 export default class SearchComponent extends BaseIterableComponent {
 
   constructor() {
-    super("#main"), {
-      url: "",
+    super("#main", {
+      url: "http://localhost:8080/projects",
       method: "GET",
       elementsSelector: "#projects"
-    }
+    });
   }
 
   template() {
@@ -34,12 +34,10 @@ export default class SearchComponent extends BaseIterableComponent {
     return `<div class="col">
               <div class="card h-100">
                 <div class="card-body">
-                  <h3 class="card-title mb-4">Andromede 1000</h3>
-                  <p class="card-text text-size"><span class="start-date">${this.msg.searchProject.card.startDate}</span> Jan 10, 2002
-                  <p class="card-text text-size">${this.msg.searchProject.card.inProduction} 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-toggle-on switched-rotate" viewBox="0 0 16 16">
-                      <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                    </svg>
+                  <h3 class="card-title mb-4">${element.name}</h3>
+                  <p class="card-text text-size"><span class="start-date">${element.startDate}</span> Jan 10, 2002
+                  <p class="card-text text-size"> 
+                    <i class="bi bi-toggle-on production-${element.production}"></i>
                   </p>
                 </div>
                 <div class="card-footer footer-color d-flex justify-content-end">
