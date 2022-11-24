@@ -1,289 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Project</title>
-    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> <!-- bootstrap icons -->
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/header.css">
-</head>
-<body>
-    <header class="fixed-top navbar-custom">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark container-xl">
-            <a class="navbar-brand" href="#"><span class="logo">match<span id="my-color">my</span>dev</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse static-top" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Create Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./search-project.html">Search Project</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./update-project.html">Update project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main class="container-xl my-5 pt-5">
-        <h1 class="pt-3">Search Project</h1>
-        <form class="mb-3 mt-4">
-          <div class="input-group mb-3">
-            <label for="projestSearch" class="form-label">Search project</label>
-            <div class="input-group">
-                <input name="project-search"id="project-search" type="text" class="form-control focus-grey" aria-label="project name" aria-describedby="basic-addon2">
-                <span class="input-group-text"><i class="bi bi-search"></i></span>
-                <button type="submit" class="btn btn-create">Search</button>
-              </div>
-              <div id="projectHelp" class="form-text">Please enter part of or full project name</div>
-          </div>
-        </form>
 
-        <h2>Projects found </h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 font-regular">
-            <div class="col">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h3 class="card-title mb-4">Andromede 1000</h3>
-                  <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
-                  <p class="card-text text-size">In production: 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-toggle-on switched-rotate" viewBox="0 0 16 16">
-                      <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                    </svg>
-                  </p>
-                </div>
-                <div class="card-footer footer-color d-flex justify-content-end">
-                 <i class="bi bi-eye"></i>
-                </div>
-              </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Andromede 1000</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
-                    <p class="card-text text-size">In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-toggle-on switched-rotate" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Romaine 3500</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Feb 12, 2022</p>
-                    <p class="card-text text-size"> In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="green" class="bi bi-toggle-on" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Andromede 1000</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
-                    <p class="card-text text-size">In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-toggle-on switched-rotate" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Romaine 3500</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Feb 12, 2022</p>
-                    <p class="card-text text-size"> In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="green" class="bi bi-toggle-on" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Romaine 3500</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Feb 12, 2022</p>
-                    <p class="card-text text-size"> In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="green" class="bi bi-toggle-on" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Andromede 1000</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
-                    <p class="card-text text-size">In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-toggle-on switched-rotate" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Romaine 3500</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Feb 12, 2022</p>
-                    <p class="card-text text-size"> In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="green" class="bi bi-toggle-on" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Andromede 1000</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
-                    <p class="card-text text-size">In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-toggle-on switched-rotate" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Romaine 3500</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Feb 12, 2022</p>
-                    <p class="card-text text-size"> In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="green" class="bi bi-toggle-on" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Andromede 1000</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
-                    <p class="card-text text-size">In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-toggle-on switched-rotate" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Andromede 1000</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
-                    <p class="card-text text-size">In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-toggle-on switched-rotate" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Andromede 1000</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
-                    <p class="card-text text-size">In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-toggle-on switched-rotate" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h3 class="card-title mb-4">Andromede 1000</h3>
-                    <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
-                    <p class="card-text text-size">In production: 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-toggle-on switched-rotate" viewBox="0 0 16 16">
-                        <path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10H5zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
-                      </svg>
-                    </p>
-                  </div>
-                  <div class="card-footer footer-color d-flex justify-content-end">
-                   <i class="bi bi-eye"></i>
-                  </div>
-                </div>
-              </div>    
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Project</title>
+  <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body>
+  <header class="fixed-top navbar-custom">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark container-xl">
+      <a class="navbar-brand" href="#"><span class="logo">match<span id="my-color">my</span>dev</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse static-top" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Create Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./search-project.html">Search Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./update-project.html">Update project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container-xl my-5 pt-5">
+    <h1 class="pt-3">Search Project</h1>
+    <form class="mb-3 mt-4">
+      <div class="input-group mb-3">
+        <label for="projestSearch" class="form-label">Search project</label>
+        <div class="input-group">
+          <input name="project-search" id="project-search" type="text" class="form-control focus-grey"
+            aria-label="project name" aria-describedby="basic-addon2">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <button type="submit" class="btn btn-create">Search</button>
         </div>
-    </main>
-    
+        <div id="projectHelp" class="form-text">Please enter part of or full project name</div>
+      </div>
+    </form>
+
+    <h2>Projects found </h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 font-regular">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Andromede 1000</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
+            <p class="card-text text-size">In production:
+              <i class="bi bi-toggle-on production-true"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Andromede 1000</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
+            <p class="card-text text-size">In production:
+              <i class="bi bi-toggle-on production-true"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Romaine 3500</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Feb 12, 2022</p>
+            <p class="card-text text-size"> In production:
+              <i class="bi bi-toggle-on production-false"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Andromede 1000</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
+            <p class="card-text text-size">In production:
+              <i class="bi bi-toggle-on production-true"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Romaine 3500</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Feb 12, 2022</p>
+            <p class="card-text text-size"> In production:
+              <i class="bi bi-toggle-on production-false"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Romaine 3500</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Feb 12, 2022</p>
+            <p class="card-text text-size"> In production:
+              <i class="bi bi-toggle-on production-false"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Andromede 1000</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
+            <p class="card-text text-size">In production:
+              <i class="bi bi-toggle-on production-true"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Romaine 3500</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Feb 12, 2022</p>
+            <p class="card-text text-size"> In production:
+              <i class="bi bi-toggle-on production-true"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Andromede 1000</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
+            <p class="card-text text-size">In production:
+              <i class="bi bi-toggle-on production-true"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Romaine 3500</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Feb 12, 2022</p>
+            <p class="card-text text-size"> In production:
+              <i class="bi bi-toggle-on production-false"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Andromede 1000</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
+            <p class="card-text text-size">In production:
+              <i class="bi bi-toggle-on production-false"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Andromede 1000</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
+            <p class="card-text text-size">In production:
+              <i class="bi bi-toggle-on production-true"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Andromede 1000</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
+            <p class="card-text text-size">In production:
+              <i class="bi bi-toggle-on production-true"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title mb-4">Andromede 1000</h3>
+            <p class="card-text text-size"><span class="start-date">Start date:</span> Jan 10, 2002
+            <p class="card-text text-size">In production:
+              <i class="bi bi-toggle-on production-false"></i>
+            </p>
+          </div>
+          <div class="card-footer footer-color d-flex justify-content-end">
+            <i class="bi bi-eye"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
 </body>
+
 </html>

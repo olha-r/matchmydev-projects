@@ -2,107 +2,178 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matchmydev</title>
-    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/manager-projects.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matchmydev</title>
+  <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/manager-projects.css">
 </head>
 
 <body>
-    <header class="fixed-top navbar-custom">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark container-xl">
-            <a class="navbar-brand" href="#"><span class="logo">match<span id="my-color">my</span>dev</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse static-top" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Create Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./search-project.html">Search Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./update-project.html">Update project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./manager-projects.html">Manager project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main class="container-xl mt-5 pt-5">
-        <h1 class="mb-3">Manager's project(s)</h1>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button focus-grey" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Romaine 3500
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body ">
-                    <div class="d-flex">
-                        <div class="col-sm-12 col-md-6 d-flex justify-content-center">
-                            <p><span class="start-date">Start date:</span> Jan 10, 2002</p>
-                        </div>
-                        <div class="col-sm-12 col-md-6 d-flex justify-content-center">
-                           <p class="card-text text-size">In production: <i class="bi bi-toggle-on"></i></p>      
-                        </div>
-                </div>
-                <div class="col">
-                    <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur accusantium?
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur accusantium?
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur accusantium?
-                    </p>
-                </div>
-                </div>
+  <header class="fixed-top navbar-custom">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark container-xl">
+      <a class="navbar-brand" href="#"><span class="logo">match<span id="my-color">my</span>dev</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse static-top" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Create Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./search-project.html">Search Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./update-project.html">Update project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./manager-projects.html">Manager project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container-xl mt-5 pt-5">
+    <h1 class="mb-3">Manager's project(s)</h1>
+    <div class="accordion" id="manager-projects">
+      <!-- <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed focus-grey" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne">
+            Romaine 3500
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#managers-projects">
+          <div class="accordion-body ">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-md-center justify-content-start">
+                <p><span class="start-date">Start date:</span> Jan 10, 2002</p>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-md-center justify-content-start mb-3">
+                <p class="card-text text-size">In production: <i class="bi bi-toggle-on"></i></p>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Project #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga
+              corporis rem eum laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat
+              vel consectetur accusantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum
+              laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur
+              accusantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum
+              laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur
+              accusantium?
+            </p>
           </div>
-        
-    </main>
+        </div>
+      </div> -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed focus-grey" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne">
+            Romaine 3500
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#managers-projects">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-md-center justify-content-start">
+                <p><span class="start-date">Start date:</span> Jan 10, 2002</p>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-md-center justify-content-start mb-3">
+                <p class="card-text text-size">In production: <i class="bi bi-toggle-on production-true"></i></p>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga
+              corporis rem eum laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat
+              vel consectetur accusantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum
+              laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur
+              accusantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum
+              laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur
+              accusantium?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed focus-grey" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo">
+            Andromede 1000
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#managers-projects">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-md-center justify-content-start">
+                <p><span class="start-date">Start date:</span> Jan 10, 2002</p>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-md-center justify-content-start mb-3">
+                <p class="card-text text-size">In production: <i class="bi bi-toggle-on production-false"></i></p>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga
+              corporis rem eum laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat
+              vel consectetur accusantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum
+              laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur
+              accusantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum
+              laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur
+              accusantium?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed focus-grey" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree">
+            Orion 2020
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#managers-projects">
+          <div class="accordion-body">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-md-center justify-content-start">
+                <p><span class="start-date">Start date:</span> Jan 10, 2002</p>
+              </div>
+              <div class="col-12 col-md-6 d-flex justify-content-md-center justify-content-start mb-3">
+                <p class="card-text text-size">In production: <i class="bi bi-toggle-on production-true"></i></p>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga
+              corporis rem eum laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat
+              vel consectetur accusantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum
+              laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur
+              accusantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo fugiat ab consequatur fuga corporis rem eum
+              laudantium ea. Magnam voluptas nostrum aliquam optio maxime eaque, recusandae quaerat vel consectetur
+              accusantium?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
 </body>
 
 </html>
