@@ -43,7 +43,8 @@ export default class SearchComponent extends BaseIterableComponent {
                 <div class="card-footer footer-color d-flex justify-content-end">
                  <i class="bi bi-eye"></i>
                 </div>
-            </div> `;
+              </div>
+            </div>`;
   }
 
 }
