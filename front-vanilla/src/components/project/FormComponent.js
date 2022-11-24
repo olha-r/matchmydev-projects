@@ -9,13 +9,13 @@ export default class FormComponent extends BaseFormComponent {
         });
     }
 
-    dataModel(){
-        return{
-            name: "test",
-            code: "123",
-            description: "TEST",
-            startDate: "",
-            endDate: "",
+    dataModel() {
+        return {
+            name: null,
+            code: null,
+            description: null,
+            startDate: null,
+            endDate: null,
             production: false
         }
     }
@@ -47,13 +47,11 @@ export default class FormComponent extends BaseFormComponent {
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="startDate" class="form-label required">${this.msg.createProject.form.startDate.label}</label>
-                        <input name="startDate" type="date" id="startDate" class="form-control my-2 focus-grey"
-                            min="2018-01-01" />
+                        <input name="startDate" type="date" id="startDate" class="form-control my-2 focus-grey" />
                     </div>
                     <div class="col-md-6">
                         <label for="endDate" class="form-label">${this.msg.createProject.form.endDate.label}</label>
-                        <input name="endDate" type="date" id="endDate" class="form-control my-2 focus-grey"
-                            min="2018-01-01" />
+                        <input name="endDate" type="date" id="endDate" class="form-control my-2 focus-grey" />
                         <div id="endDateHelp" class="form-text">${this.msg.createProject.form.endDate.helpText}</div>
                     </div>
                 </div>

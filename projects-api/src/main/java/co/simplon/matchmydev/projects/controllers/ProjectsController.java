@@ -59,7 +59,7 @@ public class ProjectsController {
 	for (Project project : projects) {
 	    ProjectView view = new ProjectView();
 	    view.setId(project.getId());
-	    view.setName(project.getCode());
+	    view.setName(project.getName());
 	    view.setCode(project.getCode());
 	    view.setDescription(project.getDescription());
 	    view.setStartDate(project.getStartDate());
