@@ -2,3 +2,16 @@
     background-color: var(--secondary-color3)!important;
     color: var( --primary-color1);
 }
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color1);
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    vertical-align: -0.3rem;
+}
+
+/* .accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+    background-image: var(--primary-color1)
+} */
