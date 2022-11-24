@@ -35,7 +35,7 @@ export default class SearchComponent extends BaseIterableComponent {
               <div class="card h-100">
                 <div class="card-body">
                   <h3 class="card-title mb-4">${element.name}</h3>
-                  <p class="card-text text-size"><span class="start-date">${element.startDate}</span> Jan 10, 2002
+                  <p class="card-text text-size"><span class="start-date">${this.dtf(element.startDate)}</span>
                   <p class="card-text text-size"> 
                     <i class="bi bi-toggle-on production-${element.production}"></i>
                   </p>

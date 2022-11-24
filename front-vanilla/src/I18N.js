@@ -6,7 +6,9 @@ export default class I18N {
 
    static async init() {
 
-      const dtfOptions = { dateStyle: 'short' };
+      const dtfOptions = {
+         year: 'numeric', month: 'short', day: 'numeric'
+      };
 
       I18N.dtf = new Intl.DateTimeFormat('en', dtfOptions);
 

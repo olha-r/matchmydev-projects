@@ -4,10 +4,10 @@ export default class BaseComponent {
 
     msg = I18N.messages;
 
-    // dtf = (str) => {
-    //     const date = new Date(str);
-    //     return I18N.dtf.format(date);
-    // }
+    dtf = (str) => {
+        const date = new Date(str);
+        return I18N.dtf.format(date);
+    }
 
     selector = null;
 
