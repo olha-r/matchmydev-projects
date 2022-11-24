@@ -1,0 +1,4 @@
+.accordion-button{
+    background-color: var(--secondary-color3)!important;
+    color: var( --primary-color1);
+}
