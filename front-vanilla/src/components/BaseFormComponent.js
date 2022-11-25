@@ -16,11 +16,16 @@ export default class BaseFormComponent extends BaseComponent {
         const properties = Object.keys(data);
         const form = this.target.querySelector("form");
         BaseFormComponent.bind(properties, form, data);
-        form.addEventListener("submit", (event) => {
+        form.addEventListener("submit", async (event) => {
             event.preventDefault();
-            HttpClient.send(this.props.url, this.props.method, data);
-        })
+            await HttpClient.send(this.props.url, this.props.method, data);
+            if (this.props.onSuccess) {
+                window.location.href = "http://localhost:5501/#/search-project";
+            }
+        });
     }
+
+
 
     static bind(properties, form, data) {
         properties.forEach((property) => {

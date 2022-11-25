@@ -5,7 +5,8 @@ export default class FormComponent extends BaseFormComponent {
     constructor() {
         super("#main", {
             url: "http://localhost:8080/projects", // change it if necessary when backend is established
-            method: "POST"
+            method: "POST",
+            onSuccess: true
         });
     }
 
