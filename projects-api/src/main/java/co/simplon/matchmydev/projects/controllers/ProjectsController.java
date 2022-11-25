@@ -83,10 +83,8 @@ public class ProjectsController {
 	    ProjectManagerView view = new ProjectManagerView();
 	    view.setId(project.getId());
 	    view.setName(project.getName());
-	    view.setCode(project.getCode());
 	    view.setDescription(project.getDescription());
 	    view.setStartDate(project.getStartDate());
-	    view.setEndDate(project.getEndDate());
 	    view.setProduction(project.isProduction());
 	    views.add(view);
 	    System.out.println(views);

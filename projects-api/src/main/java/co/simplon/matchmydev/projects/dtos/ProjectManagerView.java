@@ -5,10 +5,8 @@ import java.time.LocalDate;
 public class ProjectManagerView {
     private Long id;
     private String name;
-    private String code;
     private String description;
     private LocalDate startDate;
-    private LocalDate endDate;
     private boolean production;
     
     public ProjectManagerView() {
@@ -31,14 +29,6 @@ public class ProjectManagerView {
         this.name = name;
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
     public String getDescription() {
         return description;
     }
@@ -55,14 +45,6 @@ public class ProjectManagerView {
         this.startDate = startDate;
     }
 
-    public LocalDate getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(LocalDate endDate) {
-        this.endDate = endDate;
-    }
-
     public boolean isProduction() {
         return production;
     }
@@ -73,11 +55,12 @@ public class ProjectManagerView {
 
     @Override
     public String toString() {
-	return "ProjectManagerView [id=" + id + ", name=" + name + ", code="
-		+ code + ", description=" + description + ", startDate="
-		+ startDate + ", endDate=" + endDate + ", production="
-		+ production + "]";
+	return "ProjectManagerView [id=" + id + ", name=" + name
+		+ ", description=" + description + ", startDate=" + startDate
+		+ ", production=" + production + "]";
     }
+
+   
     
     
     
