@@ -11,9 +11,9 @@ export default class FormComponent extends BaseFormComponent {
 
     dataModel(){
         return{
-            name: "test",
-            code: "123",
-            description: "TEST",
+            name: "",
+            code: "",
+            description: "",
             startDate: "",
             endDate: "",
             production: false

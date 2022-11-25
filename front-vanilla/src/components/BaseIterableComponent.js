@@ -11,7 +11,6 @@ export default class BaseIterableComponent extends BaseComponent {
     }
 
     async render() {
-        //super(this.render);
         super.render();
 
         const elements = await HttpClient.send(this.props.url, this.props.method);

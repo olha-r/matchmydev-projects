@@ -1,0 +1,12 @@
+.accordion-button{
+    background-color: var(--secondary-color3)!important;
+    color: var( --primary-color1);
+    border: solid 1px var(--primary-color3);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color1);
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    vertical-align: -0.3rem;
+}

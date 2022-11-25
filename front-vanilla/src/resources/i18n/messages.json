@@ -40,6 +40,15 @@
             "inProdution": "In production:"
         }
     },
+    "managerProject":{
+        "h1": "Manager's Projects",
+        "accordion":{
+            "startDate": "Start date:",
+            "inProdution": "In production:",
+            "description": "Description"
+        }
+
+    },
     "updateProject": {
         "h1": "Update project",
         "submit": {
