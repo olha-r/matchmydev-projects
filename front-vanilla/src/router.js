@@ -5,6 +5,7 @@ import InternalServerComponent from "./components/errors/InternalServerComponent
 import UnauthorizedComponent from "./components/errors/UnauthorizedComponent.js";
 import MenuComponent from "./components/MenuComponent.js";
 import SearchComponent from "./components/project/SearchComponent.js";
+import ManagersComponent from "./components/project/ManagersComponent.js";
 
 export default class Router{
 
@@ -23,6 +24,8 @@ export default class Router{
         component = new FormComponent();
     }else if (hash == "#/search-project") {
         component = new SearchComponent();
+    } else if("#/managers-projects"){
+        component = new ManagersComponent();
     } else if (hash == "#/forbidden") {
         component = new ForbiddenComponent();
     } else if (hash == "#/internal-server") {

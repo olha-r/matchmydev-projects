@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import co.simplon.matchmydev.projects.database.DataBase;
 import co.simplon.matchmydev.projects.dtos.ProjectCreateDto;
+import co.simplon.matchmydev.projects.dtos.ProjectManagerView;
 import co.simplon.matchmydev.projects.dtos.ProjectUpdateDto;
 import co.simplon.matchmydev.projects.dtos.ProjectView;
 import co.simplon.matchmydev.projects.entities.Project;
@@ -72,5 +73,26 @@ public class ProjectsController {
 	return views;
 
     }
+    
+    @GetMapping("/manager-projects")
+    public Collection<ProjectManagerView> getProjects(){
+	Collection<Project> projects = DataBase.findAll();
+	
+	Collection<ProjectManagerView> views = new ArrayList<>();
+	for (Project project : projects) {
+	    ProjectManagerView view = new ProjectManagerView();
+	    view.setId(project.getId());
+	    view.setName(project.getName());
+	    view.setDescription(project.getDescription());
+	    view.setStartDate(project.getStartDate());
+	    view.setProduction(project.isProduction());
+	    views.add(view);
+	    System.out.println(views);
+	}
+	
+	return views;
+	
+    }
+    
 
 }
