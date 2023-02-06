@@ -2,13 +2,32 @@ package co.simplon.matchmydev.projects.dtos;
 
 import java.time.LocalDate;
 
+import javax.validation.constraints.FutureOrPresent;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class ProjectCreateDto {
 
+    @NotEmpty
+    @Size(min = 1, max = 150)
     private String name;
+
+    @NotEmpty
+    @Size(min = 1, max = 20)
     private String code;
+
+    @NotEmpty
+    @Size(min = 1, max = 1000)
     private String description;
+
+    @NotNull
     private LocalDate startDate;
+
+    @FutureOrPresent
     private LocalDate endDate;
+
+    @NotNull
     private boolean production;
 
     public String getName() {
