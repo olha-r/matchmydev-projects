@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,28 +19,22 @@ import co.simplon.matchmydev.projects.dtos.ProjectManagerView;
 import co.simplon.matchmydev.projects.dtos.ProjectUpdateDto;
 import co.simplon.matchmydev.projects.dtos.ProjectView;
 import co.simplon.matchmydev.projects.entities.Project;
+import co.simplon.matchmydev.projects.services.ProjectService;
 
 @RestController
 @RequestMapping("/projects")
-@CrossOrigin
 public class ProjectsController {
+
+    private final ProjectService projectService;
+
+    public ProjectsController(ProjectService projectService) {
+	this.projectService = projectService;
+    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void create(@RequestBody ProjectCreateDto inputs) {
-	Project project = new Project();
-
-	project.setName(inputs.getName());
-	project.setCode(inputs.getCode());
-	project.setDescription(inputs.getDescription());
-	project.setStartDate(inputs.getStartDate());
-	project.setEndDate(inputs.getEndDate());
-	project.setProduction(inputs.isProduction());
-
-	DataBase.saveProject(project);
-
-	System.out.println(inputs);
-
+	projectService.create(inputs);
     }
 
     @PatchMapping("/{id}")
@@ -73,11 +66,11 @@ public class ProjectsController {
 	return views;
 
     }
-    
+
     @GetMapping("/manager-projects")
-    public Collection<ProjectManagerView> getProjects(){
+    public Collection<ProjectManagerView> getProjects() {
 	Collection<Project> projects = DataBase.findAll();
-	
+
 	Collection<ProjectManagerView> views = new ArrayList<>();
 	for (Project project : projects) {
 	    ProjectManagerView view = new ProjectManagerView();
@@ -89,10 +82,9 @@ public class ProjectsController {
 	    views.add(view);
 	    System.out.println(views);
 	}
-	
+
 	return views;
-	
+
     }
-    
 
 }
