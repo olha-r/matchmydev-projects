@@ -4,5 +4,5 @@ import co.simplon.matchmydev.projects.dtos.ProjectCreateDto;
 
 public interface ProjectService {
 
-    void createProject(ProjectCreateDto inputs);
+    void create(ProjectCreateDto inputs);
 }

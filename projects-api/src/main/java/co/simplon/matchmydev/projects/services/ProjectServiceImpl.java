@@ -16,7 +16,7 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public void createProject(ProjectCreateDto inputs) {
+    public void create(ProjectCreateDto inputs) {
 	Project project = new Project();
 	project.setName(inputs.getName());
 	project.setCode(inputs.getCode());

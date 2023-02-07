@@ -34,25 +34,7 @@ public class ProjectsController {
     @PostMapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void create(@RequestBody ProjectCreateDto inputs) {
-	Project project = new Project();
-
-	project.setName(inputs.getName());
-	project.setCode(inputs.getCode());
-	project.setDescription(inputs.getDescription());
-	project.setStartDate(inputs.getStartDate());
-	project.setEndDate(inputs.getEndDate());
-	project.setProduction(inputs.isProduction());
-
-	DataBase.saveProject(project);
-
-	System.out.println(inputs);
-
-    }
-
-    @PostMapping("/create-project")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void createProject(@RequestBody ProjectCreateDto inputs) {
-	projectService.createProject(inputs);
+	projectService.create(inputs);
     }
 
     @PatchMapping("/{id}")
