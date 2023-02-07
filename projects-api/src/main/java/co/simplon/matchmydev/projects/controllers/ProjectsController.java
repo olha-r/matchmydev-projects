@@ -3,6 +3,8 @@ package co.simplon.matchmydev.projects.controllers;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import javax.validation.Valid;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
@@ -33,7 +35,7 @@ public class ProjectsController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void create(@RequestBody ProjectCreateDto inputs) {
+    public void create(@RequestBody @Valid ProjectCreateDto inputs) {
 	projectService.create(inputs);
     }
 

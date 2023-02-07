@@ -9,6 +9,7 @@ target/
 .classpath
 .project
 .settings
+.application.properties
 
 ### VS Code ###
 .vscode/
