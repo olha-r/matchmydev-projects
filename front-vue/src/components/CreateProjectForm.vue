@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         createNewProject() {
-            this.$axios.post("/create",
+            this.$axios.post("/projects",
                 this.newProject)
                 .then((response) => {
                     console.log(response);
@@ -23,10 +23,6 @@ export default {
             console.log(this.newProject)
         }
     },
-
-    mounted() {
-
-    }
 }
 
 

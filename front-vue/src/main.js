@@ -7,7 +7,7 @@ import './assets/main.css'
 const app = createApp(App)
 
 const axiosInstance = axios.create({
-    baseURL: 'https://localhost:8080',
+    baseURL: 'http://localhost:8080',
 
   });
 
