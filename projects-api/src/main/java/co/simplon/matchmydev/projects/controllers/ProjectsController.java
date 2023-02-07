@@ -19,10 +19,17 @@ import co.simplon.matchmydev.projects.dtos.ProjectManagerView;
 import co.simplon.matchmydev.projects.dtos.ProjectUpdateDto;
 import co.simplon.matchmydev.projects.dtos.ProjectView;
 import co.simplon.matchmydev.projects.entities.Project;
+import co.simplon.matchmydev.projects.services.ProjectService;
 
 @RestController
 @RequestMapping("/projects")
 public class ProjectsController {
+
+    private final ProjectService projectService;
+
+    public ProjectsController(ProjectService projectService) {
+	this.projectService = projectService;
+    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
@@ -40,6 +47,12 @@ public class ProjectsController {
 
 	System.out.println(inputs);
 
+    }
+
+    @PostMapping("/create-project")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void createProject(@RequestBody ProjectCreateDto inputs) {
+	projectService.createProject(inputs);
     }
 
     @PatchMapping("/{id}")
