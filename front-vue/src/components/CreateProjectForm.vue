@@ -38,10 +38,10 @@ export default {
                     maxLength: maxLength(1000)
                 },
                 startDate:{
-                    required,
+                    required
                 },
                 endDate:{
-                    minValue: minValue(this.newProject.startDate)
+                    minValue: minValue(new Date(this.newProject.startDate))
                 },
                 production:{
                     required
@@ -53,17 +53,22 @@ export default {
     },
     methods: {
         async createNewProject() {
+            const startDate= new Date(this.newProject.startDate);
+            const endDate= new Date(this.newProject.endDate);
             console.log(this.newProject);
-            const startDate= this.newProject.startDate;
-            const endDate= this.newProject.endDate;
             console.log(typeof startDate);
+            console.log(startDate);
             console.log(typeof endDate);
+            console.log(endDate);
             if(await this.v$.$validate()){
                 await this.$axios.post("/projects",
                 this.newProject)
                 .then((response) => {
                     console.log(response);
+                    Object.assign(this.$data.newProject, this.$options.data().newProject);
+                    this.v$.$reset() 
                 })
+
 
             }
         }
