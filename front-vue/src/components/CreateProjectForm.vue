@@ -68,8 +68,12 @@ export default {
                 this.newProject)
                 .then((response) => {
                     console.log(response);
-                    Object.assign(this.$data.newProject, this.$options.data().newProject);
-                    this.v$.$reset() 
+                    Object.assign(this.$data.newProject, this.$options.data().newProject),
+                    this.v$.$reset();
+                    const toast = bootstrap.Toast.getOrCreateInstance('#toastSuccess', {
+                            delay: 2500
+                        });
+                    toast.show()
                 })
             } 
         }
@@ -131,6 +135,13 @@ export default {
                     </div>
                 </div>
             </form>
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div ref="toast1" id="toastSuccess" class="toast bg-success text-white" role="alert">
+                <div class="toast-body">
+                    The project was succesfully created.
+                </div>
+            </div>
+        </div>
         </div>
     </main>
 </template>
