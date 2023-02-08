@@ -1,10 +1,14 @@
 <script>
 import { useVuelidate } from '@vuelidate/core'
-import { required, maxLength, minLength} from '@vuelidate/validators'
+import { required, maxLength, minLength, minValue} from '@vuelidate/validators'
 export default {
+    setup(){
+        return{
+            v$:useVuelidate()
+        }
+    },
     data() {
         return {
-            v$:useVuelidate(),
             newProject: {
                 name: '',
                 code: '',
@@ -34,7 +38,10 @@ export default {
                     maxLength: maxLength(1000)
                 },
                 startDate:{
-                    required
+                    required,
+                },
+                endDate:{
+                    minValue: minValue(this.newProject.startDate)
                 },
                 production:{
                     required
@@ -46,6 +53,11 @@ export default {
     },
     methods: {
         async createNewProject() {
+            console.log(this.newProject);
+            const startDate= this.newProject.startDate;
+            const endDate= this.newProject.endDate;
+            console.log(typeof startDate);
+            console.log(typeof endDate);
             if(await this.v$.$validate()){
                 await this.$axios.post("/projects",
                 this.newProject)
@@ -53,14 +65,10 @@ export default {
                     console.log(response);
                 })
 
-            console.log(this.newProject)
-
             }
         }
     }
 }
-
-
 </script>
 
 <template>
@@ -96,7 +104,7 @@ export default {
                     </div>
                     <div class="col-md-6">
                         <label for="endDate" class="form-label">End date</label>
-                        <input v-model="newProject.endDate" name="endDate" type="date" id="endDate"
+                        <input v-model="newProject.endDate" name="endDate" type="date" id="endDate" :class="{'is-invalid' : v$.newProject.endDate.$error}"
                             class="form-control my-2 focus-grey" min="2018-01-01" />
                         <div id="endDateHelp" class="form-text">If set, must be after start date and less than or equal
                             today.</div>
