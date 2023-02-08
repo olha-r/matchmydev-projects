@@ -2,11 +2,13 @@ package co.simplon.matchmydev.projects.dtos;
 
 import java.time.LocalDate;
 
-import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import co.simplon.matchmydev.projects.validators.DateConstraint;
+
+@DateConstraint
 public class ProjectCreateDto {
 	
     @NotBlank
@@ -24,7 +26,6 @@ public class ProjectCreateDto {
     @NotNull
     private LocalDate startDate;
 
-    @FutureOrPresent
     private LocalDate endDate;
 
     @NotNull
