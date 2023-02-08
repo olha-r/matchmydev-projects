@@ -41,7 +41,17 @@ export default {
                     required
                 },
                 endDate:{
-                    minValue: minValue(new Date(this.newProject.startDate))
+                    minValue: () => {
+                    const start = this.newProject.startDate;
+                    const end = this.newProject.endDate;
+                    if (start !== null && start != '' && end != null && end != '') {
+                        const startDate = new Date(start);
+                        const endDate = new Date(end);
+                        const valid = endDate > startDate;
+                        return valid;
+                    }
+                    return true;
+}
                 },
                 production:{
                     required
@@ -53,13 +63,6 @@ export default {
     },
     methods: {
         async createNewProject() {
-            const startDate= new Date(this.newProject.startDate);
-            const endDate= new Date(this.newProject.endDate);
-            console.log(this.newProject);
-            console.log(typeof startDate);
-            console.log(startDate);
-            console.log(typeof endDate);
-            console.log(endDate);
             if(await this.v$.$validate()){
                 await this.$axios.post("/projects",
                 this.newProject)
@@ -68,9 +71,7 @@ export default {
                     Object.assign(this.$data.newProject, this.$options.data().newProject);
                     this.v$.$reset() 
                 })
-
-
-            }
+            } 
         }
     }
 }
