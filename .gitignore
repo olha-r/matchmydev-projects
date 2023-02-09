@@ -1,3 +1,5 @@
 .DS_Store
 .vscode/*
 */application.properties
+.history/*
+.gitignore_*
