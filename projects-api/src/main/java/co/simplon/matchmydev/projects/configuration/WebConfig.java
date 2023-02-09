@@ -6,10 +6,10 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 	
+
 	@Value("${matchmydev.cors.allowed-origins}")
 	private String[] allowedOrigins;
 
@@ -19,6 +19,7 @@ public class WebConfig implements WebMvcConfigurer {
 	@Override
 	public void configurePathMatch(PathMatchConfigurer configurer) {
 		configurer.setUseTrailingSlashMatch(false);
+
 	}
 
 	@Override

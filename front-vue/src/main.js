@@ -4,10 +4,11 @@ import router from './router'
 import axios from 'axios'
 import './assets/main.css'
 
+
 const app = createApp(App)
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8080',
+    baseURL:import.meta.env.VITE_API_BASE_URL
 
   });
 
