@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import CreateProjectView from '../views/CreateProjectView.vue'
+import UpdateProjectView from '../views/UpdateProjectView.vue'
 
 
 const router = createRouter({
@@ -13,7 +14,7 @@ const router = createRouter({
     {
       path: '/update-project/:id',
       name: 'updateProject',
-      component: CreateProjectView
+      component: UpdateProjectView
     }
 
   ]

@@ -68,30 +68,41 @@ export default {
         async updateProject() {
             console.log(this.$route.params.id)
             if (await this.v$.$validate()) {
-                await this.$axios.put("/projects/${this.id}",
+                await this.$axios.put(`/projects/${this.id}`,
                     this.updatedProject)
                     .then((response) => {
                         console.log(response);
-                        Object.assign(this.$data.updatedProject, this.$options.data().updatedProject),
                             this.v$.$reset();
                         const toast = bootstrap.Toast.getOrCreateInstance('#toastSuccess', {
                             delay: 2500
                         });
                         toast.show()
-                    })
+                    })        
             }
-        }
+        },
+
+    async getProjectForUpdate() {
+        await this.$axios.get(`/projects/${this.id}`)
+
+        .then((response) => {
+            this.updatedProject = response.data
+        })
+        console.log(response.data);
+        console.log(this.updateProject);
+        console.log(response);
+
+    }    
     },
  mounted()  {
 this.id = this.$route.params.id;
-
+this.getProjectForUpdate();
  }
 }
 </script>
 
 <template>
     <main class="container-xl mt-5 pt-5">
-        <h1>Create a project</h1>
+        <h1>Update a project</h1>
         <div class="row justify-content-center align-items-center">
             <form @submit.prevent="updateProject">
                 <div class="row">
@@ -150,7 +161,7 @@ this.id = this.$route.params.id;
                 </div>
                 <div class="row mb-3">
                     <div class="col d-flex justify-content-end content">
-                        <button type="submit" class="btn col-12 col-md-2 btn-create">Create</button>
+                        <button type="submit" class="btn col-12 col-md-2 btn-create">Update</button>
                     </div>
                 </div>
             </form>
