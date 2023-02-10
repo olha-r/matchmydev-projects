@@ -44,8 +44,9 @@ public class ProjectServiceImpl implements ProjectService {
 	
     }
     
+    @Override
     public ProjectUpdateView findProjectById(Long id) {
-	return projectRepo.findProjectById(id).get;
+	return projectRepo.findProjectedById(id).get();
     }
 
 }

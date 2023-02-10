@@ -11,4 +11,5 @@ public interface ProjectRepository extends JpaRepository<Project, Long> {
 
    Optional<ProjectUpdateView> findProjectedById(Long id);
 
+
 }
