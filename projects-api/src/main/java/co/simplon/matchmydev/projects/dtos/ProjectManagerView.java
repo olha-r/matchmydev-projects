@@ -60,9 +60,6 @@ public class ProjectManagerView {
 		+ ", production=" + production + "]";
     }
 
-   
-    
-    
-    
+  
 
 }
