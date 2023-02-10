@@ -2,14 +2,42 @@ package co.simplon.matchmydev.projects.dtos;
 
 import java.time.LocalDate;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class ProjectUpdateDto {
 
+    @NotBlank
+    private String id;
+    
+    @NotBlank
+    @Size(min = 1, max = 150)
     private String name;
+
+    @NotBlank
+    @Size(min = 1, max = 20)
     private String code;
+
+    @NotBlank
+    @Size(min = 1, max = 1000)
     private String description;
+
+    @NotNull
     private LocalDate startDate;
+
     private LocalDate endDate;
+
+    @NotNull
     private boolean production;
+    
+    public String getId() {
+   	return id;
+    }
+
+    public void setId(String id) {
+   	this.id = id;
+    }
 
     public String getName() {
 	return name;
@@ -66,4 +94,5 @@ public class ProjectUpdateDto {
 		+ endDate + ", production=" + production + "]";
     }
 
+   
 }
