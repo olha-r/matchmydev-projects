@@ -83,13 +83,13 @@ export default {
 
     async getProjectForUpdate() {
         await this.$axios.get(`/projects/${this.id}`)
-
         .then((response) => {
             this.updatedProject = response.data
+            this.statusProject = response.status
+            console.log("response:", response);
+            
         })
-        console.log(response.data);
-        console.log(this.updateProject);
-        console.log(response);
+        
 
     }    
     },
